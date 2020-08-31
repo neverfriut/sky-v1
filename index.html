@@ -5,10 +5,14 @@
     <title>360&deg; Image</title>
     <meta name="description" content="360&deg; Image - A-Frame">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
   </head>
   <body>
     <a-scene>
       <a-sky src="6.png" rotation="0 -130 0"></a-sky>
+      <a-entity
+        troika-text="value: Hello!"
+        troika-text-material="shader: standard; metalness: 0.8;"></a-entity>
 
       <a-text font="kelsonsans" value="Puy de Sancy, France" width="6" position="-2.5 0.25 -1.5"
               rotation="0 15 0"></a-text>
